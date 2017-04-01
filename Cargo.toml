@@ -1,0 +1,6 @@
+[package]
+name = "alloc-tcmalloc"
+version = "0.1.0"
+authors = ["Jay Lee <busyjaylee@gmail.com>"]
+
+[dependencies]
