@@ -45,7 +45,8 @@ fn build_on_nix(src_dir: &Path, build_dir: &Path, out_dir: &Path) {
        .arg(format!("--prefix={}", out_dir.display()))
        .arg("--with-pic=yes")
        .arg("--disable-shared")
-       .arg("--disable-debugalloc");
+       .arg("--disable-debugalloc")
+       .arg("--with-tcmalloc-pagesize=32");
 
     run(&mut cmd);
     run(Command::new("make")
